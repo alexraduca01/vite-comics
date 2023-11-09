@@ -1,1 +1,9 @@
 @use "./node_modules/bootstrap/scss/bootstrap.scss" as *;
+
+$main-color: #0282F9;
+$main-background-color: #303030;
+$main-text-color: #959595;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
