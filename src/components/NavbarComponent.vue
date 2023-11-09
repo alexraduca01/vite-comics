@@ -5,7 +5,7 @@
                 <div>
                     <img :src="element.image" :alt="element.title">
                 </div>
-                <span class="ms-3 text-white">{{ element.title }}</span>
+                <span class="ms-3 text-white text-uppercase">{{ element.title }}</span>
             </div>
         </div>
     </nav>
@@ -48,9 +48,11 @@
 nav {
     margin: 0;
     background-color: $main-color;
+    position: relative;
+    z-index: 1000;
 }
 img {
-    width: 55px;
+    width: 60px;
     height: 65px;
 }
 .cursor-pointer {

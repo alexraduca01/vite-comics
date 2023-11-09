@@ -85,7 +85,7 @@
 <style lang="scss" scoped>
 @use '../assets/css/main.scss' as *;
 .is-active {
-    color: $main-color;
+    color: $main-color!important;
     border-bottom: 5px solid $main-color;
 }
 </style>
