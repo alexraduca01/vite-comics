@@ -20,5 +20,7 @@
 </script>
 
 <style lang="scss" scoped>
-
+h2 {
+    margin: 0;
+}
 </style>
