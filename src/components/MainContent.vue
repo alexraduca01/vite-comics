@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center mt-5">
-                <button class="bg-primary py-3 px-5 text-white text-uppercase fs-5">
+                <button class="bg-primary py-3 px-5 text-white text-uppercase fs-5" @click="loadMore()">
                     load more
                 </button> 
             </div>
@@ -32,6 +32,20 @@ import MainComponent from './MicroComponents/MainComponent.vue';
         data(){
             return {
                 dcComics: [],
+                randomTitles: ['Laughing Dream', 'The Dying Predator', 'Something of Light', "The Theft's Moons", 'The Hunter of the Rings', 'Lords in the Courage', 'Hard Dreamer', 'The Burning Death', 'Voyager of Husband', "The Serpents's Teacher", 'The Academy of the Boyfriend', 'Dreams in the Waves'],
+            }
+        },
+        methods: {
+            loadMore(){
+                for(let i = 0; i < 12; i++){
+                    this.dcComics.push({
+                        thumb: 'https://source.unsplash.com/random?',
+                        series: this.randomTitles[this.getRndInteger(0, this.randomTitles.length - 1)],
+                    })
+                }
+            },
+            getRndInteger(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) ) + min;
             }
         },
         mounted(){
