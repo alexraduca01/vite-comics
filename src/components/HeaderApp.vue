@@ -67,7 +67,7 @@
         },
         methods: {
             changeActiveIndex(id){
-                for(let i = 0; i < this.headerNavbar.length; i++){
+                for(let i = 0; i < this.headerNavbar.length - 1; i++){
                     if(this.headerNavbar[i].id === id){
                         this.activeIndex = i;
                     };

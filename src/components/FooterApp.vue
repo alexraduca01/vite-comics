@@ -69,5 +69,6 @@ h5 {
 }
 .my-font-size {
     font-size: 0.9rem;
+    cursor: pointer;
 }
 </style>
